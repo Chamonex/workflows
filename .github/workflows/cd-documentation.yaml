@@ -4,9 +4,7 @@ on:
       input1:
         required: false
         type: string
+
 jobs:
-  example_job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Example Step
-        run: echo "This is an example job in a reusable workflow."
+  call-workflow-passing-data:
+    uses: Chamonex/workflows/.github/workflows/cd-documentation.yaml@main
