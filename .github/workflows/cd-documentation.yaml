@@ -6,6 +6,8 @@ on:
       input1:
         required: false
         type: string
+permissions:
+  contents: write
 jobs:
   deploy:
     runs-on: ubuntu-latest
